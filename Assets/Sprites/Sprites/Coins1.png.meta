@@ -113,12 +113,12 @@ TextureImporter:
       name: Coins1_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 2
         y: 2
-        width: 4
+        width: 5
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4984127, y: 0.49876547}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,7 +139,7 @@ TextureImporter:
         width: 8
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Coins1_2
       rect:
         serializedVersion: 2
-        x: 10
+        x: 31
         y: 2
         width: 4
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,9 +176,9 @@ TextureImporter:
       name: Coins1_3
       rect:
         serializedVersion: 2
-        x: 4
+        x: 9
         y: 2
-        width: 1
+        width: 6
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f93a7ce213174043a9c675e1d1aae35
+      spriteID: ed105092844b9a64a863345db56e93bd
       internalID: 895144828
       vertices: []
       indices: 
@@ -207,7 +207,7 @@ TextureImporter:
       Coins1_0: 1274649597
       Coins1_1: 507513229
       Coins1_2: 897475712
-      Coins1_3: 895144828
+      Coins1_3: -2019290972
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
