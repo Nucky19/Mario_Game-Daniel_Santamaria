@@ -34,10 +34,15 @@ public class Enemy : MonoBehaviour
             else if(enemyDirection==-1)enemyDirection=1;
         }
 
-        if(collision.gameObject.tag == "Player") Destroy(collision.gameObject);
+        if(collision.gameObject.tag == "Player"){
+            PlayerMovement player = GameObject.FindObjectOfType<PlayerMovement>();
+            player.MarioDeath();
+        }
     }
 
     public void GoombaDeath(){
+        ContManager contManager = GameObject.FindObjectOfType<ContManager>();
+        contManager.LoadGoombaCont();
         source.PlayOneShot(deathSound);
         boxCollider.enabled=false;
         rBody.gravityScale = 0;

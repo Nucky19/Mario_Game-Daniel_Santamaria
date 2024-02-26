@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -49,10 +51,22 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsRunning",true);
         }
         else anim.SetBool("IsRunning",false);
+
     }
+
+    void OnCollisionEnter2D(Collision2D collision){
+        Debug.Log("aa");
+        if(collision.gameObject.tag == "Vacio") MarioDeath();
+    }
+
 
     void FixedUpdate(){
         rBody.velocity = new Vector2(inputHorizontal * movementSpeed, rBody.velocity.y); 
+    }
+
+    public void MarioDeath(){
+        SceneManager.LoadScene("Game Over");
+        Destroy(gameObject);
     }
 }
 
